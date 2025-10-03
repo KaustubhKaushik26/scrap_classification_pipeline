@@ -17,6 +17,7 @@ This project implements a complete, end-to-end machine learning pipeline to clas
 ## 📁 Folder Structure
 The project has an organized folder structure to keep the code, data, models, and results separate.
 
+```bash
 scrap_classification_pipeline/
 ├── data/               # Contains the image dataset (e.g., cardboard/, glass/)
 ├── models/             # Stores trained model files (.pth, .onnx)
