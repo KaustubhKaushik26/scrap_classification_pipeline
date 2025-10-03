@@ -34,6 +34,7 @@ scrap_classification_pipeline/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
+```
 
 
 
