@@ -72,37 +72,37 @@ Follow these instructions to set up the project and run the pipeline.
 1. Setup the Environment
 This project uses a Conda environment to manage dependencies.
 
-# First, create the Conda environment using Python 3.9
+### First, create the Conda environment using Python 3.9
 `conda create --name scrap_env python=3.9 -y`
 
-# Next, activate the environment
+### Next, activate the environment
 `conda activate scrap_env`
 
 2. Install Dependencies
 All required packages are listed in the requirements.txt file.
 
-# Install the uv package installer, which is faster than pip (optional)
+### Install the uv package installer, which is faster than pip (optional)
 `pip install uv`
 
-# Install all dependencies from the requirements file
+### Install all dependencies from the requirements file
 `uv pip install -r requirements.txt`
 
 3. Run the Full Pipeline
 Execute the following scripts from the project's root directory in order.
 
-# 1. Train the model. This will save the best model to the /models folder.
+### 1. Train the model. This will save the best model to the /models folder.
 `python -m src.train`
 
-# 2. Convert the trained PyTorch model to the lightweight ONNX format.
+### 2. Convert the trained PyTorch model to the lightweight ONNX format.
 `python -m src.export_to_onnx`
 
-# 3. Run the final conveyor belt simulation. This will create a log in the /results folder.
+### 3. Run the final conveyor belt simulation. This will create a log in the /results folder.
 `python -m src.simulation`
 
 You can also run the evaluation scripts at any time after the model is trained:
 
-# (Optional) Generate the classification report and confusion matrix
+### (Optional) Generate the classification report and confusion matrix
 `python -m src.evaluate`
 
-# (Optional) Generate the dataset class distribution plot
+### (Optional) Generate the dataset class distribution plot
 `python -m src.eda`
