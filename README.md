@@ -19,20 +19,21 @@ The project has an organized folder structure to keep the code, data, models, an
 
 scrap_classification_pipeline/
 ├── data/               # Contains the image dataset (e.g., cardboard/, glass/)
-├── models/             # Stores the trained model files (.pth and .onnx)
-├── results/            # Contains output files like logs and plots
-├── src/                # All Python source code
+├── models/             # Stores trained model files (.pth, .onnx)
+├── results/            # Logs, plots, and evaluation results
+├── src/                # Python source code
 │   ├── __init__.py
-│   ├── config.py
-│   ├── data_preprocessing.py
-│   ├── eda.py
-│   ├── evaluate.py
-│   ├── export_to_onnx.py
-│   ├── inference.py
-│   └── simulation.py
+│   ├── config.py              # Configurations and hyperparameters
+│   ├── data_preprocessing.py  # Data cleaning & augmentation
+│   ├── eda.py                 # Exploratory Data Analysis
+│   ├── evaluate.py            # Model evaluation
+│   ├── export_to_onnx.py      # Convert PyTorch model → ONNX
+│   ├── inference.py           # Run inference on new images
+│   └── simulation.py          # Scrap classification simulation
 ├── .gitignore
-├── README.md           # This file
-└── requirements.txt    # Project dependencies
+├── README.md
+└── requirements.txt
+
 
 
 ---
